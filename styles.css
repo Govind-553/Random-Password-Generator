@@ -1,18 +1,21 @@
-*{
+* {
    margin: 0;
    padding: 0;
    font-family: 'Poppins', sans-serif;
    box-sizing: border-box;
 }
+
 body {
    background: #002339;
    color: #fff;
 }
+
 .container {
    margin: 12%;
    width: 90%;
    max-width: 700px;
 }
+
 .display {
    width: 100%;
    margin-top: 50px;
@@ -25,29 +28,35 @@ body {
    padding: 26px 20px;
    border-radius: 5px;
 }
+
 .container h1 {
    font-weight: 500;
    font-size: 45px;
 }
+
 .container h1 span {
    color: #019f55;
    border-bottom: 4px solid #019f55;
    padding-bottom: 7px;
 }
-.display img{
+
+.display img {
    width: 30px;
    cursor: pointer;
 }
+
 .display input {
    border: 0;
    outline: 0;
    font-size: 24px;
 }
-.container button img{
+
+.container button img {
    width: 28px;
    margin-right: 10px;
 }
-.container button{
+
+.container button {
    border: 0;
    outline: 0;
    background: #019f55;
@@ -62,9 +71,102 @@ body {
    cursor: pointer;
 }
 
+/* Mobile screens (max width 767px) */
+@media (max-width: 767px) {
+   .container {
+      margin: 5%;
+      width: 100%;
+   }
+   
+   .container h1 {
+      font-size: 35px;
+   }
+   
+   .display {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+   }
+   
+   .display input {
+      font-size: 18px;
+      width: 100%;
+      margin-bottom: 10px;
+   }
+   
+   .container button {
+      font-size: 18px;
+      padding: 12px 20px;
+   }
+   
+   .container button img {
+      width: 24px;
+      margin-right: 8px;
+   }
+}
 
+/* Tablet screens (max width 1024px) */
+@media (max-width: 1024px) {
+   .container {
+      margin: 8%;
+      width: 100%;
+   }
+   
+   .container h1 {
+      font-size: 40px;
+   }
+   
+   .display {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 22px;
+   }
+   
+   .display input {
+      font-size: 20px;
+      width: 100%;
+      margin-bottom: 12px;
+   }
+   
+   .container button {
+      font-size: 20px;
+      padding: 14px 24px;
+   }
+   
+   .container button img {
+      width: 26px;
+      margin-right: 9px;
+   }
+}
 
+/* Desktop screens (above 1024px) */
+@media (min-width: 1025px) {
+   .container {
+      margin: 12%;
+      width: 90%;
+   }
 
+   .container h1 {
+      font-size: 45px;
+   }
 
+   .display {
+      flex-direction: row;
+      align-items: center;
+      padding: 26px 20px;
+   }
 
+   .display input {
+      font-size: 24px;
+   }
+   
+   .container button {
+      font-size: 22px;
+      padding: 16px 26px;
+   }
 
+   .container button img {
+      width: 28px;
+      margin-right: 10px;
+   }
+}
